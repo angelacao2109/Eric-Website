@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eric's Portfolio</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="mediaqueries.css"> 
+</head>
+<body>
+   <nav id="desktop-nav">
+    <div class="logo"> Eric Laurin</div>
+    <div>
+        <ul class ="nav-links">
+            <li> <a href="#about">About</a></li>
+            <li> <a href="#experience">Experience</a></li>
+            <li> <a href="#projects">Projects</a></li>
+            <li> <a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+   </nav>
+   <nav id="hamburger-nav">
+    <div class="logo"> Eric Laurin</div>
+    <div class ="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+         </div>
+         <div class="menu-links">
+            <li> <a href="#about"  onclick="toggleMenu()">About</a></li>
+            <li> <a href="#experience"  onclick="toggleMenu()">Experience</a></li>
+            <li> <a href="#projects"  onclick="toggleMenu()">Projects</a></li>
+            <li> <a href="#contact"  onclick="toggleMenu()">Contact</a></li>
+         </div>
+        </div>
+   </nav>
+   <section id="profile">
+    <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Eric Laurin</h1>
+        <p class="section__text__p2">Embedded Systems Engineer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/Resume.pdf')">
+            Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+         <a href="https://www.linkedin.com/in/eric-laurin/" target="_blank">
+         <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon">
+        </a>
+        <a href="https://github.com/ejl30380" target="_blank">
+         <img src="./assets/github.png" alt="My GitHub profile" class="icon">
+        </a>
+        </div>
+      </div>
+   </section>
+
+   <section id="about">
+    <h1 class="title">About Me</h1>
+    <div class="about-containers">
+      <div class="text-container">
+         <p>
+           Eric pls write sOMETHING.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+         </p>
+       </div>
+
+        <div class="experience-details-container "> 
+
+         <div class="about-detail-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon">
+            <h3>Education</h3>
+            <p>B.S Computer Engineering Bachelors Degree<br> B.S Electrical Engineering Bachelors Degree</p>
+          </div>
+
+            <div class="about-detail-container">
+                <img src="./assets/skills.png" alt="Skills icon" class="icon">
+                <h3>Skills</h3>
+                <div class="article-containers">
+             <article>
+                <div> C </div>
+             </article>
+             <article>
+                <div> C++ </div>
+             </article>
+             <article>
+                <div> Java </div>
+             </article>
+             <article>
+                <div> MATLAB </div>
+             </article>
+             <article>
+                <div> Python </div>
+                </article>
+                <article>
+                    <div> API Development </div>
+                 </article>
+                 <article>
+                    <div> esp32 </div>
+                 </article>
+                 <article>
+                    <div> ARM </div>
+                 </article>
+                 <article>
+                    <div> AVR </div>
+                 </article>
+                 <article>
+                    <div> Arduino </div>
+                 </article>
+                 <article>
+                    <div> PLC </div>
+                 </article>
+                 <article>
+                  <div> Robotics </div>
+               </article>
+           
+                </div>
+              </div>
+       
+        </div>
+
+       
+      </div>
+   </section>
+
+   <section id="experience">
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">  
+        <div class="about-containers">
+<div class="details-container">
+    <h2 class="experience-sub-title">Embedded Systems Intern </h2>
+    <h3 class="experience-company"> Georgia Tech Research Institute </h3>
+    <h4> May 2023 – August 2023 </h4>
+    <div>
+       <ul> Assisted with the design, development, testing and integration of custom or COTS computing, signal
+        processing, or communication circuit cards in embedded products for Radar applications.</ul>
+        <ul>Gained experience working with large engineering teams (30+) using agile development.</ul>
+    </div>
+</div>
+
+<div class="details-container">
+    <h2 class="experience-sub-title">Student Software / Hardware Developer </h2>
+    <h3 class="experience-company"> UGA </h3>
+    <h4> January 2023 – May 2023</h4>
+    <div>
+        <ul>TCP-Based Remote Lab Communication Solution</ul>
+         <ul>Designing portable software in C++ for low latency communication and control of remote hardware.</ul>
+         <ul>Creating a webserver for multiplexing Lab to Student TCP connections based on scheduling data.</ul>
+       <ul>Gained experience working with large engineering teams (30+) using agile development.</ul>
+    
+     </div>
+</div>
+
+<div class="details-container">
+    <h2 class="experience-sub-title">Sensors and Transducers Course Assistant </h2>
+    <h3 class="experience-company"> UGA </h3>
+    <h4> August 2022 – December 2022</h4>
+    <div>
+        <ul> Created new course materials, new labs and assisted students with course material. </ul>
+         <ul>Developed remotely accessible labs to leverage modern embedded platforms and integrated with IOT data
+            collection services to bring lab data into MATLAB for remote access by students over the internet.</ul>
+     </div>
+</div>
+
+<div class="details-container">
+    <h2 class="experience-sub-title">Engineering Intern</h2>
+    <h3 class="experience-company"> Automation Direct  </h3>
+    <h4> May 2019 – August 2020</h4>
+    <div>
+        <ul> Fabricated product demonstration fixtures to market functions and capabilities of new or poorly documented
+            products.</ul>
+         <ul>Collaborated alongside social media team of 5 members to promote products on YouTube channel.</ul>
+         <ul>Prepared and organized event materials for robotics community outreach. 50+ team events.</ul>
+     </div>
+</div>
+
+        </div>
+         </div>
+   </section>
+
+
+   <section id="projects">
+    <h1 class="title">Projects</h1>
+    <div class="project-format">
+      <div class="left-format">
+    <img src="https://i.pinimg.com/736x/1b/23/07/1b230783cb0d380a4586f386c4cd7e29.jpg">
+    <div class="text-align">
+    <h2>TITLE</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+       sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      </div>
+
+
+
+      <div class="right-format">
+<img src="https://i.pinimg.com/736x/1b/23/07/1b230783cb0d380a4586f386c4cd7e29.jpg">
+<div class="text-align">
+   <h2>TITLE</h2>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+     dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+      sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+     </div>
+
+
+      </div>
+      <div class="left-format">
+         <img src="https://i.pinimg.com/736x/1b/23/07/1b230783cb0d380a4586f386c4cd7e29.jpg">
+         <div class="text-align">
+         <h2>TITLE</h2>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+           dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+           </div>
+           </div>
+     
+     
+     
+           <div class="right-format">
+     <img src="https://i.pinimg.com/736x/1b/23/07/1b230783cb0d380a4586f386c4cd7e29.jpg">
+     <div class="text-align">
+        <h2>TITLE</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+          dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+           sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+     
+     
+           </div>
+           <div class="left-format">
+            <img src="https://i.pinimg.com/736x/1b/23/07/1b230783cb0d380a4586f386c4cd7e29.jpg">
+            <div class="text-align">
+            <h2>TITLE</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+              dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+               sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+              </div>
+        
+        
+        
+              <div class="right-format">
+        <img src="https://i.pinimg.com/736x/1b/23/07/1b230783cb0d380a4586f386c4cd7e29.jpg">
+        <div class="text-align">
+           <h2>TITLE</h2>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+             dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+             </div>
+        
+        
+              </div>
+   </section>
+
+
+
+   <section id="contact">
+    <h1 class="title"> Contact Me</h1>
+    <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
+          <p><a href="mailto:elaurin123@gmail.com">elaurin123@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+          <p><a href="https://www.linkedin.com/in/eric-laurin/" target="_blank">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+            <img src="./assets/github.png" alt="GitHub icon" class="icon contact-icon">
+            <p><a href="https://github.com/ejl30380" target="_blank">GitHub</a></p>
+          </div>
+      </div>
+   </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
